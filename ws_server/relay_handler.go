@@ -1,11 +1,11 @@
 package main
 
 import (
-	"irctalk/common"
+	"../common"
 	"log"
 )
 
-// relay server -> irctalk server 
+// relay server -> irctalk server
 // chat message와 같은 실시간 푸시 메세지만 전달한다.
 
 func InitHandler(z *common.ZmqMessenger) {

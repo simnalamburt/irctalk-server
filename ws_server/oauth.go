@@ -1,10 +1,10 @@
 package main
 
 import (
-	"code.google.com/p/goauth2/oauth"
+	"../common"
 	"encoding/json"
+	"golang.org/x/oauth2"
 	"io"
-	"irctalk/common"
 )
 
 type GoogleOauth struct {

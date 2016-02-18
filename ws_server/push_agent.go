@@ -1,10 +1,10 @@
 package main
 
 import (
+	"../common"
 	"encoding/json"
 	"fmt"
 	gcm "github.com/googollee/go-gcm"
-	"irctalk/common"
 	"log"
 	"strings"
 )

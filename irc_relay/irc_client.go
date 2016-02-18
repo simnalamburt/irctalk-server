@@ -1,11 +1,11 @@
 package main
 
 import (
+	"../common"
 	"crypto/tls"
 	"fmt"
 	irc "github.com/fluffle/goirc/client"
 	"hash/crc32"
-	"irctalk/common"
 	"log"
 	"strings"
 	"sync"

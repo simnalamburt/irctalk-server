@@ -1,10 +1,10 @@
 package main
 
 import (
-	"irctalk/common"
+	"../common"
+	"github.com/garyburd/redigo/redis"
 	"log"
 	"os"
-	"redigo/redis"
 )
 
 var quit = make(chan bool)

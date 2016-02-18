@@ -1,10 +1,10 @@
 package main
 
 import (
-	"code.google.com/p/go.net/websocket"
+	"../common"
 	"encoding/json"
 	"fmt"
-	"irctalk/common"
+	"github.com/gorilla/websocket"
 	"log"
 	"time"
 )
@@ -300,7 +300,7 @@ STOP:
 		case packet := <-recv:
 			log.Printf("-> [%s](%d): %s[%d]", packet.Cmd, packet.Status, string(packet.RawData), len(packet.RawData))
 			c.handler.Handle(c, packet)
-		case <- time.After(time.Duration(config.KeepAliveInterval)*time.Second):
+		case <-time.After(time.Duration(config.KeepAliveInterval) * time.Second):
 			log.Printf("KeepAlive Timeout!")
 			break STOP
 		case <-c.stoprecv:

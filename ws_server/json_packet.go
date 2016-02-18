@@ -1,7 +1,7 @@
 package main
 
 import (
-	"irctalk/common"
+	"../common"
 	"log"
 	"reflect"
 )

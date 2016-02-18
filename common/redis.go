@@ -2,7 +2,7 @@ package common
 
 import (
 	"fmt"
-	"redigo/redis"
+	"github.com/garyburd/redigo/redis"
 	"reflect"
 	"strconv"
 )

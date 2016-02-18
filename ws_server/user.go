@@ -1,13 +1,13 @@
 package main
 
 import (
+	"../common"
 	"crypto/hmac"
 	"crypto/sha1"
 	"fmt"
+	"github.com/garyburd/redigo/redis"
 	"io"
-	"irctalk/common"
 	"log"
-	"redigo/redis"
 	"sync"
 	"sync/atomic"
 	"time"

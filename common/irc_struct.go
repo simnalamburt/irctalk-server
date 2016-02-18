@@ -2,9 +2,9 @@ package common
 
 import (
 	"fmt"
+	"github.com/garyburd/redigo/redis"
 	"strings"
 	"time"
-	"redigo/redis"
 )
 
 func UnixMilli(t time.Time) int64 {
@@ -19,7 +19,7 @@ type IRCLog struct {
 	Channel   string `json:"channel"`
 	From      string `json:"from,omitempty"`
 	Message   string `json:"message"`
-	Noti	  bool   `json:"noti,omitempty"`
+	Noti      bool   `json:"noti,omitempty"`
 }
 
 type IRCChannel struct {

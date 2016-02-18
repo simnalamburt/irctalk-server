@@ -1,8 +1,8 @@
 package main
 
 import (
-	"code.google.com/p/go.net/websocket"
-	"irctalk/common"
+	"../common"
+	"github.com/gorilla/websocket"
 	"log"
 	"net/http"
 )
